@@ -1,0 +1,138 @@
+.bg-con {
+    position: absolute;
+    height: 927px;
+    width: 1920px;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    z-index: -999;
+    background-image: url('../assets/images/BG-wallpaper.png');
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo-web {
+    position: relative;
+    top: -200px;
+    align-items: 'center';
+    width: 400px;
+    max-width: 450px;
+    margin: 250px 0 100px 0;
+}
+
+
+.button {
+    position: relative;
+    top: -60px;
+    margin: 0;
+    width: 450px;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    flex-Direction: row;
+    justify-Content: center;
+    align-Items: center;
+    border-radius: 5px;
+    border: none;
+    background-Image: linear-gradient(to right, #001B79 20%, #00A9FF, #89CFF3, #A0E9FF);
+    box-shadow: 0px 0px 50px #00A9FF;
+    transition: box-shadow 0.5s ease;
+
+    & h2 {
+        color: white;
+        margin: 0;
+    }
+}
+
+.button:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+
+.cycle1 {
+    position: absolute;
+    z-Index: -1;
+    top: -800px;
+    left: -550px;
+    border-Radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-Image: linear-gradient(#FFBB5C, #FF9B50, #E25E3E, #C63D2F);
+}
+
+.cycle2 {
+    position: absolute;
+    z-Index: -1;
+    bottom: -70px;
+    left: -660px;
+    border-Radius: 50%;
+    width: 130px;
+    height: 130px;
+    background-Image: linear-gradient(#FFBB5C, #FF9B50, #E25E3E, #C63D2F);
+}
+
+.cycle3 {
+    position: absolute;
+    z-Index: -1;
+    top: -550px;
+    right: -600px;
+    border-Radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-Image: linear-gradient(#A0E9FF, #00A9FF, #001B79);
+}
+
+@media (max-width: 481px) {
+    .bg-con {
+        width: 480px;
+        height: 926px;
+    }
+
+    .button {
+        top: 15px;
+        background-Image: linear-gradient(#001B79);
+        margin-top: 100px;
+        width: 230px;
+        height: 60px;
+
+        & h2 {
+            font-size: 15px;
+        }
+    }
+
+    .logo-web {
+        position: relative;
+        top: -50px;
+        width: 370px;
+        height: auto;
+        margin: 0;
+    }
+
+    .cycle1 {
+        width: 120px;
+        height: 120px;
+        top: -450px;
+        left: -230px;
+    }
+    .cycle2 {
+        width: 90px;
+        height: 90px;
+        top: 130px;
+        left: -160px;
+    }
+    .cycle3 {
+        width: 75px;
+        height: 75px;
+        top: -190px;
+        left: 140px;
+    }
+}
+

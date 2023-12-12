@@ -1,0 +1,13 @@
+.cont-card {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    gap: 0;
+}
+
+@media (max-width: 481px) {
+    .cont-card {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,19 @@
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: #222831;
+}
+
+@media (max-width: 481px) {
+  .container {
+    height: auto;
+    width: 480px;
+
+    & .test {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,262 @@
+.main-cou {
+  margin-top: 10px;
+}
+
+.icon-Arrows {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+.icon-Arrows:hover {
+  color: #00ADB5;
+  transform: translateX(-10px);
+  transition: transform 0.2s ease, color 0.8s ease;
+}
+
+.title-name {
+  font-size: 40px;
+  font-weight: bold;
+  color: #00ADB5;
+}
+
+.teach-name {
+  margin: 10px 0;
+  color: rgba(255, 194, 102, 0.884);
+  font-weight: 600;
+}
+
+.img-cou {
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.about-cou {
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.des-cou {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #727272;
+}
+
+.cont-cou {
+  font-weight: bold;
+  font-size: 16;
+  color: #00ADB5;
+}
+
+.box-cou {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-cou {
+  display: flex;
+  padding: 13px;
+  background-color: #393E46;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  align-items: center;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.num-cou {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  color: #00ADB5;
+  margin-right: 20px;
+}
+
+.text-cou {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.icon-color {
+  align-items: center;
+  color: #e46d0c;
+
+}
+
+.icon-color:hover {
+  border-radius: 50%;
+  transition: box-shadow 0.5s ease;
+  box-shadow: 0 0 30px #00ADB5;
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+
+.cou-coutent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.btn-reset {
+  width: 200px;
+  height: 50px;
+  background-color: #00ADB5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.5s ease;
+}
+
+.btn-reset:hover {
+  background-color: rgb(247, 126, 126);
+  color: white;
+}
+
+.des-les {
+  background-color: #393E46;
+  margin: 0 auto;
+  width: 1000px;
+  height: 720px;
+  padding: 40px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  & .name-les {
+    color: white;
+    font-size: 22px;
+  }
+
+  & .name-text {
+    line-height: 30px;
+    margin: 25px 0;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  & .underline {
+    border-bottom: 2px solid #00ADB5;
+  }
+}
+
+.container-video {
+  height: 1530px;
+  width: 100%;
+  padding: 20px;
+  background-color: #222831;
+
+  & .vdo-les {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+  }
+}
+
+.comment {
+  background-color: rgb(7, 16, 27);
+  width: 920px;
+  height: 450px;
+  border-radius: 10px;
+
+  & .name-les {
+    padding: 20px;
+  }
+
+  & #comment {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(131, 130, 130);
+    background-color: #1e2429;
+    padding: 20px;
+    color: #cacaca;
+    font-size: 20px;
+  }
+
+  & .btn-sub {
+    margin: 0 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #00ADB5;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  & .btn-sub:hover {
+    cursor: pointer;
+    background-color: #245c5f;
+  }
+}
+
+@media (max-width: 481px) {
+  .container-video {
+    height: 100%;
+    &  .vdo-les {
+      margin: 0;
+      width: 435px;
+      height: 350px;
+    }
+}
+  .about-cou {
+    color: white;
+    font-size: 20px;
+  }
+
+  .des-cou {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .btn-reset {
+    margin-top: 10px;
+  }
+
+  .des-les {
+    width: 435px;
+    height: 580px;
+    margin: 0;
+    & .name-les {
+      font-size: 14px;
+    }
+
+    & .name-text {
+      line-height: 20px;
+      margin: 10px 0;
+      font-size: 10px;
+    }
+
+    & .underline {
+      border-bottom: 2px solid #00ADB5;
+    }
+  }
+
+  .comment {
+    width: 355px;
+    height: 350px;
+
+    & #comment {
+      width: 315px;
+      height: 200px;
+      font-size: 15px;
+    }
+
+    .btn-sub {
+      width: 315px;
+      height: 35px;
+    }
+  }
+}
